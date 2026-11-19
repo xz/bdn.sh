@@ -13,8 +13,8 @@ I'm interested in the history of the Internet, the domain name system, internet 
 
 ## Contact
 
-You can find me on GitHub as [@3x][github], on Codeberg as [@bdn][codeberg], and on Signal as [@bdn.01][signal]. You're welcome to email me at `contact [at] bdn [dot] sh`.
+You can find me on GitHub as [@xz][github], on Codeberg as [@bdn][codeberg], and on Signal as [@bdn.01][signal]. You're welcome to email me at `contact [at] bdn [dot] sh`.
 
-[github]: https://github.com/3x
+[github]: https://github.com/xz
 [codeberg]: https://codeberg.org/bdn
 [signal]: https://signal.me/#eu/u9me3dCYpEWzEtvY0IWpQzZcNh9Zc1xeQvkK0lWmNJ0bJ1SCbBhPOpVcIlMiO3K1
