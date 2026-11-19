@@ -3,7 +3,7 @@
     "url": "https://bdn.sh",
     "navItems": [
         { "text": "home", "url": "/" },
-        { "text": "blog", "url": "/blog/" },
+        { "text": "blog posts", "url": "/posts/" },
         { "text": "pages", "url": "/pages/" }
     ],
     "badges": [

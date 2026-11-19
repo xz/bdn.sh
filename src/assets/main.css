@@ -9,7 +9,6 @@
     --color-link: #8cc2dd;
     --color-link-hover: #98e5d7;
     --color-code-background: #00181e;
-
 }
 
 html {
@@ -48,7 +47,8 @@ header {
     text-decoration: none;
     color: white;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         font-style: italic;
     }
 
@@ -64,9 +64,13 @@ header {
         display: inline-block;
         width: 38px;
         height: 38px;
-        margin-right: .75rem;
+        margin-right: 0.75rem;
         margin-bottom: 6px;
     }
+}
+
+ul {
+    padding-left: 20px;
 }
 
 nav {
@@ -82,12 +86,11 @@ nav {
     }
 }
 
-
-
 a {
     color: var(--color-link);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: var(--color-link-hover);
         text-decoration: none;
     }
@@ -99,8 +102,8 @@ footer {
 }
 
 .final-footer {
-    font-size: .8rem;
-    opacity: .5;
+    font-size: 0.8rem;
+    opacity: 0.5;
 }
 
 .badges {
@@ -114,7 +117,8 @@ footer {
     height: 31px;
 }
 
-pre, code {
+pre,
+code {
     background: var(--color-code-background);
     font-family: var(--font-mono);
     font-size: 0.9rem;
@@ -154,36 +158,41 @@ blockquote {
     }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 table {
-	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
-	border-collapse: collapse;
-	width: 100%
+    /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+    border-collapse: collapse;
+    width: 100%;
 }
 
 td,
 th {
-	border: 1px solid #ffffff20;
-	text-align: left;
-	padding: .5rem;
+    border: 1px solid #ffffff20;
+    text-align: left;
+    padding: 0.5rem;
 }
 
 th {
-	background: #ffffff30;
+    background: #ffffff30;
 }
 
 tr:nth-child(even) {
-	/* Set every other cell slightly darker. Improves readability. */
-	background: #ffffff10;
+    /* Set every other cell slightly darker. Improves readability. */
+    background: #ffffff10;
 }
 
 table caption {
-	font-weight: bold;
-	margin-bottom: .5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 article {
@@ -195,4 +204,37 @@ article {
     background: #daa52042;
     margin: 1rem;
     padding: 1rem;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    & a,
+    & time {
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+}
+
+.dots {
+    overflow: hidden;
+    flex-grow: 0;
+    margin: 0 1rem;
+}
+
+.dots::before {
+    /* thanks to https://stackoverflow.com/a/27279246 for this method! */
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    opacity: 0.5;
+    content: ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+time {
+    font-family: var(--font-mono);
 }
