@@ -3,10 +3,8 @@
     "url": "https://bdn.sh",
     "navItems": [
         { "text": "home", "url": "/" },
-        { "text": "about", "url": "/about/" },
         { "text": "blog", "url": "/blog/" },
-        { "text": "pages", "url": "/pages/" },
-        { "text": "contact", "url": "/contact/" }
+        { "text": "pages", "url": "/pages/" }
     ],
     "badges": [
         { "text": "Pride flag", "url": null, "src": "pride.png" },
