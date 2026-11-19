@@ -1,5 +1,5 @@
 ---
-title: foo
+title: home
 layout: "layouts/home.html"
 ---
 
