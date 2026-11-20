@@ -132,6 +132,7 @@ code {
 pre {
     padding: 10px;
     border: 1px solid #fff2;
+    overflow: scroll;
 
     & > code {
         padding: 0;
