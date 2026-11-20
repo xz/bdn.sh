@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="{{ eleventy.generator }}">
     <title>{{ title }} - {{ site.title }}</title>
+    <meta property="og:title" content="{{ title }} - {{ site.title }}">
+    {% if description %}
+    <meta name="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
+    {% endif %}
+    <meta property="og:site_name" content="brendan hersh">
+    <meta property="og:type" content="website">
+    <link rel="me" href="https://hachyderm.io/@bdn">
+    <meta name="fediverse:creator" content="@bdn@hachyderm.io">
     <link rel="icon" href="/assets/chrome/bdn-icon-128.png">
 
     <link rel="stylesheet" href="/assets/fonts.css">

@@ -1,5 +1,6 @@
 ---
 title: "From .aloha to .zzz: A first look at the first new top-level domains in 14 years"
+description: "A quick overview of the new top-level domains, like .meow and .zzz"
 last_modified: 2026-10-08
 ---
 
