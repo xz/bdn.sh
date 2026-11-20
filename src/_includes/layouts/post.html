@@ -1,7 +1,15 @@
 {% extends "layouts/base.html" %}
 {% block content %}
 <article>
+    <a href="/posts/">&lt; see all posts</a>
     <h1>{{ title }}</h1>
+    <time class="post-time" datetime="{{ page.date.getUTCFullYear() }}-{{ (page.date.getUTCMonth() + 1).toString().padStart(2,0) }}-{{ page.date.getUTCDate().toString().padStart(2,0) }}">{{ page.date.getUTCFullYear() }}-{{ (page.date.getUTCMonth() + 1).toString().padStart(2,0) }}-{{ page.date.getUTCDate().toString().padStart(2,0) }}</time>
+    <br>
     {{ content | safe }}
+    {% if likable %}
+    <br>
+    <script src="https://neatstats.net/updoot.js" defer></script>
+    <span class="updoot" data-emoji="🔼" data-page="{{ page.url }}" data-slowmode="true"></span>
+    {% endif %}
 </article>
 {% endblock %}

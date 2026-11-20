@@ -1,5 +1,6 @@
 {
     "layout": "layouts/post.html",
     "tags": "post",
-    "permalink": "/post/{{ page.date.getUTCFullYear() }}/{{ page.date.getUTCMonth() + 1 }}/{{ page.date.getUTCDate() }}/{{ title | slugify }}/index.html"
+    "permalink": "/post/{{ page.date.getUTCFullYear() }}/{{ page.date.getUTCMonth() + 1 }}/{{ page.date.getUTCDate() }}/{{ title | slugify }}/index.html",
+    "likable": true
 }

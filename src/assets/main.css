@@ -239,3 +239,7 @@ article {
 time {
     font-family: var(--font-mono);
 }
+
+.post-time {
+    opacity: .5;
+}
